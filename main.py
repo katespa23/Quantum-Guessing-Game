@@ -130,7 +130,7 @@ print("For the rest of the game, you will be prompted to enter measurements and 
 
   #This is all relative to round 1:
 dx ={}
-for k in range (4, stopindex, step): 
+for k in range (5, stopindex, step): 
   x = input("ask for an x measurement")
   if x == "+":
     a= 1
@@ -138,12 +138,12 @@ for k in range (4, stopindex, step):
     a = 0
   dx["a{0}".format(k)] = a
 xplusses = sum(dx.values())
-xminusses = 4- xplusses
+xminusses = 5- xplusses
 print("the number of x plus measurements is")
 print(xplusses)
 
 dy = {}
-for k in range (4, stopindex, step): 
+for k in range (5, stopindex, step): 
   y = input("ask for a y measurement")
   if y == "+":
     b= 1
@@ -151,12 +151,12 @@ for k in range (4, stopindex, step):
     b = 0
   dy["b{0}".format(k)] = b
 yplusses = sum(dy.values())
-yminusses = 4- yplusses
+yminusses = 5- yplusses
 print("the number of y plus measurements is")
 print(yplusses)
 
 dz = {}
-for k in range (4, stopindex, step):
+for k in range (5, stopindex, step):
   z = input("ask for a z measurement")
   if z=="+":
     c=1
@@ -164,7 +164,7 @@ for k in range (4, stopindex, step):
     c=0
   dz["c{0}".format(k)] = c
 zplusses = sum(dz.values())
-zminusses = 4-zplusses
+zminusses = 5-zplusses
 print("the number of z plus measurements is")
 print(zplusses)
 
